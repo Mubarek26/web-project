@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter: <input type="number" id="name" name="number"> <br> <br>
+    Enter: <input type="number" id="number" name="number"><br> <br>
+    <button name="submit" onclick="myfuntion()">add</button> <br> <br>
+   <input type="number" id="result" value="result" name="" id="">
+</body>
+<script>
+    function myfuntion(){
+        var a=parseInt(document.getElementById("name").value) 
+        var b=parseInt(document.getElementById("number").value) 
+        var add=a+b;
+        document.getElementById("result").value=add;
+
+    }
+</script>
+</html>

@@ -1,0 +1,339 @@
+* {
+    font-family: 'nunito';
+}
+
+.custom_items {
+    justify-content: space-around;
+
+}
+
+a {
+    text-decoration: none;
+    color: #3e483c;
+}
+
+.Login {
+
+    padding: 3px 40px;
+    font-size: 22px;
+    background-color: #68ad62;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.Login a {
+    color: #ffff;
+}
+
+.Login:hover {
+    background-color: #3e483c;
+}
+
+.nav-items li {
+    font-size: 20px;
+    margin-left: 45px;
+
+}
+
+.nav-items a {
+    font-weight: 600;
+    color: #3e483c;
+
+}
+
+.nav-items a:hover {
+    color: #89bc2e;
+}
+
+.active {
+    background-color: #89bc2e;
+    border-radius: 5px;
+
+}
+
+.Login a {
+    color: #ffff;
+}
+
+.Login:hover a {
+    color: #ffffff;
+}
+
+
+
+
+.content {
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+        url('images/home2.jpg');
+    /* Replace 'your-background-photo.jpg' with your actual image path */
+    background-size: cover;
+
+    color: #fff;
+    /* Text color */
+    display: flex;
+    align-items: center;
+    height: 150vh;
+    padding-left: 20px;
+}
+
+.content p {
+    font-size: 70px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.button-container {
+    display: flex;
+    margin-top: 130px;
+}
+
+.green-button {
+    background-color: #68ad62;
+    color: white;
+    padding: 15px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.green-button:hover {
+    background-color: yellow;
+    color: black;
+    transition: 0.7s;
+}
+
+.green-button1 {
+    background-color: #68ad62;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.green-button1:hover {
+    background-color: rgb(200, 237, 35);
+    color: black;
+    transition: 0.8s;
+}
+
+
+.first-image img {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.nxt {
+    margin-top: 80px;
+
+}
+
+.left1 {
+    padding-left: 30px;
+}
+
+.left1 h4 {
+    margin-left: 5px;
+    color: #78e16e;
+    font-weight: bold;
+}
+
+.left1 h1 {
+    font-size: 60px;
+    color: #3e483c;
+}
+
+.contac {
+    margin-left: 50px;
+    margin-top: 30px;
+    background-color: #68ad62;
+}
+
+.what {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.what h1 {
+    font-size: 55px;
+    color: #3e483c;
+    font-weight: bold;
+}
+
+.what h5 {
+    color: #68ad62;
+    font-weight: bold;
+}
+
+.farm h4 {
+    color: #68ad62;
+}
+
+.letiko {
+    margin-top: 40px;
+}
+
+.letiko h1 {
+    margin-left: 150px;
+    font-weight: 700;
+    color: #3e483c;
+}
+
+.icon-container {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    width: 60px;
+    /* Adjust the size as needed */
+    height: 60px;
+    /* Adjust the size as needed */
+    margin: 0 10px;
+    /* Adjust the spacing as needed */
+}
+
+.icon1 {
+    margin-left: 230px;
+}
+
+.icon2 {
+    margin-right: 250px;
+}
+
+.card-container1 {
+    background-color: whitesmoke;
+    height: auto;
+    width: 414px;
+    justify-content: space-between;
+    margin: 6px;
+    margin-left: 5px;
+}
+
+.bgimage {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 400px;
+    height: 200px;
+    background-image: url(images/home2.jpg);
+    background-size: cover;
+}
+
+.bgimage button {
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    background-color: #78e16e;
+    color: #fff;
+    border: none;
+}
+
+.bgimage1 {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 400px;
+    height: 200px;
+    background-image: url(images/home1.jpg);
+    background-size: cover;
+}
+
+.bgimage1 button {
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    background-color: #78e16e;
+    color: #fff;
+    border: none;
+}
+
+.comment img {
+    margin-top: 2px;
+    width: 14px;
+    height: 14px;
+}
+
+.bgimage2 {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 400px;
+    height: 200px;
+    background-image: url(images/home3.jpg);
+    background-size: cover;
+}
+
+.bgimage2 button {
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    background-color: #78e16e;
+    color: #fff;
+    border: none;
+}
+
+.comment {
+    padding-top: 10px;
+    display: flex;
+    height: auto;
+    width: 200px;
+    padding-left: 30px;
+}
+
+.comadd {
+    display: flex;
+    height: auto;
+
+}
+
+a:hover {
+    color: #89bc2e;
+}
+
+.desc a {
+
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: center;
+    color: #3e483c;
+}
+
+.desc a:hover {
+    color: #89bc2e;
+}
+
+.desc {
+    padding-left: 35px;
+
+}
+
+.lastdiv h1 {
+    padding-top: 20px;
+    padding-left: 35px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #3e483c;
+
+}

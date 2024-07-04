@@ -1,0 +1,300 @@
+<!-- product-list.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha384-ezTQAq0GaaAx1kVoWJ49m3D/Z81brU5tO+2KGVgQfsWTbCSqGTCcc31hXbiFoAA8" crossorigin="anonymous">
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Hotel Booking with Payment</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../nav/bootstrap.css">
+    <link rel="stylesheet" href="../nav/nav.css">
+    <link rel="stylesheet" href="product-list.css">
+    <style>
+        /* Add this style to your existing styles or create a new stylesheet */
+
+        #productList {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .login {
+            text-decoration: none;
+
+        }
+
+        .product-listing {
+            width: calc(25% - 20px);
+            /* Adjust the width as needed */
+            margin: 10px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* background-image: url(milk.jpg);
+    background-size: cover; */
+
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .product-listing {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 20px;
+            width: 350px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product-listing:hover {
+            transform: scale(1.05);
+        }
+
+        .product-listing img {
+
+            width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-info h2 {
+            margin-top: 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .product-info p {
+            margin: 8px 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        button {
+            background-color: #516cf0;
+            color: #fff;
+            margin-top: 6px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .products {
+            letter-spacing: 6px;
+            margin-bottom: 1em;
+
+            font-size: 36px;
+        }
+
+        .mySlides {
+
+            height: 60vh;
+            transition: 0.6s ease-in-out;
+        }
+
+        .new {
+            display: flex;
+            justify-content: start;
+
+        }
+
+        .new2 {
+            display: flex;
+            justify-content: end;
+
+        }
+
+        .main {
+            background-color: #dddd;
+
+        }
+
+        .image img:hover {
+            scale: 0.9;
+            box-shadow: #933636;
+        }
+
+        .arrow {
+            position: relative;
+            display: flex;
+            font-size: 20px;
+            position: fixed;
+            margin-top: 25em;
+            margin-left: 58em;
+            background-color: #ffa500;
+            padding: 12px;
+            border-radius: 10px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar  navbar-expand-lg  ">
+        <div class="container-fluid custom_nav">
+            <a class="navbar-brand ms-4" style="background-color: ;" href="#"><img src="../nav/images/logo-250x250.png"
+                    width="120px" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse custom_items" id="navbarNavDropdown">
+                <ul class="navbar-nav nav-items">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="../Minte/nav/nav.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Minte/nav/aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../our services/service.html">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Gallery/gallery.html">Our Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../product/info.html">Add products</a>
+                    </li>
+                    <li class="nav-item ms-5 Login">
+                        <a class="login" href="#">Logout</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-4 image ps-0 ">
+        <div class="row custom_div">
+            <div id="slideshow-container " class="col-sm-12 col-md-7 new">
+                <img class="mySlides " src="../product/farm1.jpg" alt="Slide 1">
+
+            </div>
+            <div class=" col-4 d-none  mt-4 d-lg-block" style="background-color: ;">
+                <h1>Elevate Your Taste Experience with us</h1>
+                <p>Indulge in a delectable range of dairy delights, from our creamy, farm-fresh
+                    milk to our rich and velvety yogurts. Explore the diverse flavors and textures
+                    of our artisanal cheeses, carefully crafted to satisfy every palate. Elevate your culinary
+                    experiences
+                    with our premium butter, made from the finest ingredients.</p>
+            </div>
+        </div>
+    </div>
+    </nav>
+    <div class="container mt-4  p-o">
+        <div class="row image custom_div">
+
+            <div class=" col-5 d-none  mt-5 d-lg-block" style="background-color: ;">
+                <h1>
+                    Delight in an Exquisite Symphony of Flavor </h1>
+                <p>
+                    Delight in an Exquisite Symphony of Flavor
+                    Embark on a culinary journey with our exceptional array of dairy delights,
+                    ranging from the luxuriously creamy farm-fresh milk to the decadent richness
+
+                    of our velvety yogurts. Immerse yourself in the world of artisanal cheeses, each
+                    meticulously crafted to captivate and gratify diverse palates. Elevate your gastronomic
+                    adventures with our premium butter, meticulously churned from the choicest ingredients, promising an
+                    unparalleled taste experience..</p>
+            </div>
+            <div id="slideshow-container " class="col-sm-12  col-md-7 new2">
+                <img class="mySlides " src="../product/cows.avif" alt="Slide 1">
+
+            </div>
+        </div>
+    </div>
+    <h1 class="products mt-5">
+        <span style="color: orange;">A</span>
+        <span style="color: orange;">v</span>
+        <span style="color: orange;">a</span>
+        <span style="color: orange;">i</span>
+        <span style="color: orange;">l</span>
+        <span style="color: orange;">a</span>
+        <span style="color: orange;">b</span>
+        <span style="color: orange;">l</span>
+        <span style="color: orange;">e</span>
+        <span style="color: brown;"> </span> <!-- add space with a different color if needed -->
+        <span style="color: gray;">P</span>
+        <span style="color: black;">r</span>
+        <span style="color: darkgreen;">o</span>
+        <span style="color: darkblue;">d</span>
+        <span style="color: darkred;">u</span>
+        <span style="color: darkorange;">c</span>
+        <span style="color: darkcyan;">t</span>
+        <span style="color: darkmagenta;">s</span>
+    </h1>
+
+
+    <div id="productList"></div>
+    <a href="#top" class="back-to-top arrow"><i class="fas fa-arrow-up"></i></a>
+    <footer class="footer  text-light mt-5 pt-5" style="background-color: #53593e;width: 100%;">
+        <div class="container  text-center">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Contact Us</h3>
+                    <p>Email: farmtrading@.com</p>
+                    <p>Phone: +0465580264</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Follow Us</h3>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p>&copy; 2023 Ende qeld. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="product-list.js"></script>
+    <script src="../nav/nav.js"></script>
+
+</body>
+
+</html>

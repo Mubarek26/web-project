@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  font-family: 'nunito', serif;
+}
+
+.about1 img {
+  margin-top: 20px;
+  width: 550px;
+  padding-left: 30px;
+  border-radius: 8px;
+}
+
+.about2 {
+  margin-top: 20px;
+}
+
+.main .about2.text-justify {
+  margin-top: 30px;
+}
+
+.about1.lam img {
+  width: 600px;
+}
+
+.about2 h6 {
+  margin-left: 40px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #68ad62;
+}
+
+p {
+  font-size: 18px;
+  padding-right: 40px;
+  margin-top: 20px;
+}
+
+@keyframes moveBackAndForth {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(20px);
+    /* Adjust the distance of movement */
+  }
+}
+
+.lam img {
+  animation: moveBackAndForth 3s ease infinite;
+  /* Adjust the duration of the animation */
+}
+
+
+
+/* icons containers to add eye icons */
+.icon-container {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  width: 60px;
+  /* Adjust the size as needed */
+  height: 60px;
+  /* Adjust the size as needed */
+}
+
+.icon1 {
+  margin-left: 150px;
+}
+
+.icon2 {
+  margin-right: 310px;
+}
+
+.letiko {
+  margin-top: 4px;
+}
+
+.letiko h1 {
+  margin-left: 150px;
+  font-weight: 700;
+  color: #3e483c;
+}
+
+.icon3 {
+  margin-left: 210px;
+}
+
+.letikoo {
+  margin-left: 0px;
+  margin-top: 4px;
+}
+
+.letikoo h1 {
+  margin-left: 170px;
+  font-weight: 700;
+  color: #3e483c;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onchange Event Example</title>
+</head>
+<body>
+
+    <label for="fruit">Select a fruit:</label>
+    <select id="fruit" onchange="displaySelectedFruit()">
+        <option value="apple">Apple</option>
+        <option value="banana">Banana</option>
+        <option value="orange">Orange</option>
+        <option value="grape">Grape</option>
+    </select>
+
+    <p id="result">Selected fruit will be displayed here.</p>
+
+    <script>
+          window.onload = function() {
+            // Code to be executed when the entire page has finished loading
+            alert("Page loaded!");
+        };
+        function displaySelectedFruit() {
+            // Get the selected value from the select box
+            var selectedFruit = document.getElementById("fruit").value;
+
+            // Display the selected fruit in the result paragraph
+            document.getElementById("result").innerText = "Selected fruit: " + selectedFruit;
+        }
+    </script>
+
+</body>
+</html>

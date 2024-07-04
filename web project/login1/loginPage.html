@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Register Form</title>
+    <link rel="stylesheet" href="loginPageStyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <input type="checkbox"  onclick="hideForgotPassword()" id="chk" aria-hidden="true">
+
+            <div class="login">
+                <form class="form" action="login.php" method="post">
+                    <!-- Specify the login.php as the action and use POST method -->
+                    <label for="chk" aria-hidden="true">Log in</label>
+                    <input class="input" type="email" name="email" placeholder="Email" required>
+                    <input class="input" type="password" name="password" placeholder="Password" required>
+                    <a id="forgotPasswordLink" onclick="forgot()" style="color: aliceblue;" href="">Forgot password</a>
+                    <button type="submit">Log in</button>
+                </form>
+            </div>
+
+            <div class="register">
+                <form class="form" action="register.php" method="post">
+                    <!-- Specify the register.php as the action and use POST method -->
+                    <label for="chk" aria-hidden="true">Register</label>
+                    <input class="input" type="text" name="username" placeholder="Username" required>
+                    <input class="input" type="email" name="email" placeholder="Email" required>
+                    <input class="input" type="password" name="password" placeholder="Password" required>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function hideForgotPassword() {
+            var forgotPasswordLink = document.getElementById("forgotPasswordLink");
+            if (forgotPasswordLink) {
+                forgotPasswordLink.style.display = "none";
+            }
+           
+        }
+        function forgot(){
+                alert("Please contact your admin");
+            }
+    </script>
+
+</body>
+
+</html>

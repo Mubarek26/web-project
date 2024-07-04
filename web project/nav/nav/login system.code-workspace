@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../../xampp/htdocs/login system"
+		},
+		{
+			"path": "../../../../xampp/htdocs/Home page"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "nav"
+	}
+}

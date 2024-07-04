@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <style>
+    /* Add your custom styles here */
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body>
+
+
+
+    <div class="container">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide" style="background-image: url('image/1.jpg');"></div>
+            <div class="swiper-slide" style="background-image: url('image/11.jpg');"></div>
+            <div class="swiper-slide" style="background-image: url('image/5.jpg');"></div>
+            <!-- Add more slides as needed -->
+          </div>
+          <!-- Add Navigation Buttons -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+      
+
+
+
+  <!-- Your content goes here -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    // Initialize Swiper
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+</body>
+</html>
